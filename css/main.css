@@ -24,23 +24,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-
-.box::before {
-    content: 'Это текст в ::before';
-    font-size: 40px;
-    color: orange;
-  }
-  
-  .box::after {
-    content: 'Это текст в ::after';
-    font-size: 30px;
-    color: teal;
-  }
-  
-  .box:hover::after {
-    color: pink;
-  }
-
                                             /* navigation menu */
 
 
@@ -146,6 +129,23 @@ header {
     margin-bottom: 0;
 }
 
+.contacts-link.envelope::before {
+    content: '';
+    display: inline-flex;
+    background-image: url('../images/navigation-menu/envelope.svg');
+    margin-right: 10px;
+    width: 16px;
+    height: 11px;
+}
+
+.contacts-link.phone::before {
+    content: '';
+    display: inline-flex;
+    background-image: url('../images/navigation-menu/vector.svg');
+    margin-right: 10px;
+    width: 10px;
+    height: 15px;
+}
 .contacts .link:not(:last-child){
     margin-right: 50px;
 }
@@ -170,17 +170,24 @@ header {
 /* Hero */
 
 .hero {
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
+    background-color: var(--title-text-color);
 
-    background-image: url('../images/hero-img.jpg');
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8),  rgba(47, 48, 58, 0.8)), 
+        url('../images/hero/hero-img.jpg');
+    
     background-repeat: no-repeat;
     background-position: center;
-    /* background: rgba(47, 48, 58, 0.8); */
+    background-size: cover;
+     
     text-align: center;
     height: 600px;
+    max-width: 1600px;
 
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 200px; 
 }
 
 .hero-title {
@@ -239,6 +246,54 @@ header {
     margin-right: 30px;
 }
 
+.features-item.dish::before {
+    content: '';
+    /* background-color: red; */
+    background-image: url('../images/Features/dish.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 270px;
+    height: 120px;
+    display: block;
+    margin-bottom: 30px;
+}
+.features-item.clock::before {
+    content: '';
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-image: url('../images/Features/clock.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-item.diagram::before {
+    content: '';
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-image: url('../images/Features/diagram.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
+.features-item.astronaut::before {
+    content: '';
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-image: url('../images/Features/astronaut.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 30px;
+}
+
 .features-item .features-text {
     margin-top: 0;
     margin-bottom: 0;
@@ -264,12 +319,6 @@ header {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-
-.features-pic {
-    margin-bottom: 30px;
-}
-
-
 
 .title {
     margin-top: 0;
@@ -307,6 +356,7 @@ header {
     padding-top: 27px;
     width: 360px;
 }
+
 /* 
 
 
@@ -373,6 +423,16 @@ color: var(--main-text-color);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+} 
+
+.team-list.ntw::after {
+    content: '';
+    display: inline-flex;
+    background-image: url('../images/team/instagram.svg');
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    background-position: center;
 }
 
 .customers {
