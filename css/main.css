@@ -127,6 +127,7 @@ header {
     display: flex;
     margin-left: auto;
 
+
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -149,7 +150,32 @@ header {
     color: var(--accent-text-color);
 }
 
+.envelope {
+    width: 16px;
+    height: 11px;
 
+    margin-right: 10px;
+
+    fill: var(--main-text-color);
+}
+
+.contacts-link .envelope:hover {
+    fill: var(--accent-text-color);
+}
+
+.vector {
+    width: 10px;
+    height: 15px;
+
+    margin-right: 10px;
+
+    fill: var(--main-text-color);
+}
+
+.contacts-link .vector:hover,
+.contacts-link .vector:focus {
+    fill: var(--accent-text-color);
+}
                                     /* Web Studio main page */
 
 /* Hero */
@@ -162,6 +188,8 @@ header {
 
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
 }
 
 .hero-title {
@@ -212,12 +240,68 @@ header {
 
 .features-item {
     /* outline: 2px solid red; */
-
+    /* background-color: var(--button-bg-color); */
     width: calc((100% - 90px) / 4);
 }
 
 .features-item:not(:last-child) {
     margin-right: 30px;
+}
+
+.dish {
+    width: 65px;
+    height: 70px;
+}
+
+.dish.background {
+    background-color: var(--button-bg-color);
+    width: 270px;
+    height: 120px;
+    padding: 25px 102px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.clock {
+    width: 67px;
+    height: 70px;
+}
+
+.clock.background {
+    background-color: var(--button-bg-color);
+    width: 270px;
+    height: 120px;
+    padding: 25px 102px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.diagram {
+    width: 70px;
+    height: 54px;
+}
+
+.diagram.background {
+    background-color: var(--button-bg-color);
+    width: 270px;
+    height: 120px;
+    padding: 33px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.astronaut {
+    width: 70px;
+    height: 70px;
+}
+
+.astronaut.background {
+    background-color: var(--button-bg-color);
+    width: 270px;
+    height: 120px;
+    padding: 30px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
 }
 
 .features-item .features-text {
@@ -228,10 +312,6 @@ header {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
-}
-
-.features .features-pic:hover {
-    background-color: var(--accent-text-color);
 }
 
 .features-item .features-title {
@@ -245,12 +325,6 @@ header {
     text-transform: uppercase;
     color: var(--title-text-color);
 }
-
-.features-pic {
-    margin-bottom: 30px;
-}
-
-
 
 .title {
     margin-top: 0;
