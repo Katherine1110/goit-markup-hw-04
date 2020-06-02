@@ -62,33 +62,41 @@
                 <ul class="features">
                     <li class="features-item">
                         <!-- <img src="./images/Features/dish.svg" alt="Satellite dish" class="features-pic" width="270" height="120"> -->
-                        <svg class="dish background">
-                            <use href="./images/symbol-defs.svg#icondish"></use>
-                        </svg>
+                        <div class="background">
+                            <svg class="dish">
+                                <use href="./images/symbol-defs.svg#icondish"  width="65px" height="70"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Внимание к деталям</h3>
                         <p class="features-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
                     <li class="features-item">
                         <!-- <img src="./images/Features/clock.svg" alt="Clock" class="features-pic" width="270" height="120"> -->
-                        <svg class="clock background">
-                            <use href="./images/symbol-defs.svg#iconclock"></use>
-                        </svg>
+                        <div class="background">
+                            <svg class="clock">
+                                <use href="./images/symbol-defs.svg#iconclock" width="67" height="70"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Пунктуальность</h3>
                         <p class="features-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
                     <li class="features-item">
                         <!-- <img src="./images/Features/diagram.svg" alt="Diagram on PC" class="features-pic" width="270" height="120"> -->
-                        <svg class="diagram background">
-                            <use href="./images/symbol-defs.svg#icondiagram"></use>
-                        </svg>
+                        <div class="background">
+                            <svg class="diagram">
+                                <use href="./images/symbol-defs.svg#icondiagram" width="70" height="54"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Планирование</h3>
                         <p class="features-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
                     <li class="features-item">
                         <!-- <img src="./images/Features/astronaut.svg" alt="Astronaut" class="features-pic" width="270" height="120"> -->
-                        <svg class="astronaut background">
-                            <use href="./images/symbol-defs.svg#iconastronaut"></use>
-                        </svg>
+                        <div class="background">
+                            <svg class="astronaut">
+                                <use href="./images/symbol-defs.svg#iconastronaut" width="70" height="70"></use>
+                            </svg>
+                        </div>
                         <h3 class="features-title">Современные технологии</h3>
                         <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -99,16 +107,16 @@
                 <h2 class="title">Чем мы занимаемся</h2>
                     <ul class="features-list">
                         <li class="features-items">
-                            <img src="./images/Features/laptop.png" alt="Laptop" width="360" height="294">
-                            <h3 class="caption-title">Десктопные приложения</h3>
+                            <img src="./images/laptop.png" alt="Laptop" width="360" height="294">
+                            <h3 class="caption-title">десктопные приложения</h3>
                         </li>
                         <li class="features-items">
-                            <img src="./images/Features/application.png" alt="Mobile app" width="360" height="294">
-                            <h3 class="caption-title">Мобильные приложения</h3>
+                            <img src="./images/application.png" alt="Mobile app" width="360" height="294">
+                            <h3 class="caption-title">мобильные приложения</h3>
                         </li>
                         <li class="features-items">
-                            <img src="./images/Features/design.png" alt="Design" width="360" height="294">
-                            <h3 class="caption-title">Дизайнерские решения</h3>
+                            <img src="./images/design.png" alt="Design" width="360" height="294">
+                            <h3 class="caption-title">дизайнерские решения</h3>
                         </li>
                     </ul>
             </div>
@@ -123,108 +131,172 @@
 
             <ul class="team">
                 <li class="team-list">
-                    <img src="./images/team/John.png" alt="John's photo" class="team-pic" width="260">
+                    <img src="./images/John.png" alt="John's photo" class="team-pic" width="270">
                     <h3 class="team-list-title">John Smith</h3>
                     <p class="main-text">Product Designer</p>
                         <ul class="team-networks">
                             <li class="networks">
-                                <a href="https://www.instagram.com/">
-                                    <img src="./images/team/instagram.svg" alt="Instagram icon"></a>
+                                <a href="https://www.instagram.com/" class="network-link" aria-label="Instagtam">
+                                    <svg class="network-icon" width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#iconinstagram"></use>
+                                    </svg>
+                                </a>
                             </li>
 
                             <li class="networks">
-                                <a href="https://twitter.com/">
-                                    <img src="./images/team/twitter-icon.svg" alt="Twitter icon"></a>
+                                <a href="https://twitter.com/" class="network-link" aria-label="Twitter">
+                                    <!-- <img src="./images/team/twitter-icon.svg" alt="Twitter icon"> -->
+                                    <svg class="network-icon" width="20" height="16">
+                                        <use href="./images/symbol-defs.svg#icontwitter-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
 
                             <li class="networks">
-                                <a href="https://www.facebook.com/">
-                                    <img src="./images/team/facebook-icon.svg" alt="Facebook icon"></a>
+                                <a href="https://www.facebook.com/" class="network-link">
+                                    <!-- <img src="./images/team/facebook-icon.svg" alt="Facebook icon"> -->
+                                    <svg class="network-icon" width="10" height="20">
+                                        <use href="./images/symbol-defs.svg#iconfacebook-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
 
                             <li class="networks">
-                                <a href="https://www.linkedin.com/">
-                                    <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"></a>
+                                <a href="https://www.linkedin.com/" class="network-link">
+                                    <!-- <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"> -->
+                                    <svg class="network-icon" width="20" height="20">
+                                        <use href="./images/symbol-defs.svg#iconlinkedin-icon"></use>
+                                    </svg>
+                                </a>
                             </li>
                         </ul>
                 </li>
 
                 <li class="team-list">
-                    <img src="./images/team/Marta.png" alt="Marta's photo" class="team-pic" width="260">
+                    <img src="./images/Marta.png" alt="Marta's photo" class="team-pic" width="270">
                     <h3 class="team-list-title">Marta Stewart</h3>
                     <p class="main-text">Frontend Developer</p>
-                        <ul class="team-networks">
-                            <li class="networks">
-                                <a href="https://www.instagram.com/">
-                                    <img src="./images/team/instagram.svg" alt="Instagram icon"></a>
-                            </li>
+                    <ul class="team-networks">
+                        <li class="networks">
+                            <a href="https://www.instagram.com/" class="network-link" aria-label="Instagtam">
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconinstagram"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks">
-                                <a href="https://twitter.com/">
-                                    <img src="./images/team/twitter-icon.svg" alt="Twitter icon"></a>
-                            </li>
+                        <li class="networks">
+                            <a href="https://twitter.com/" class="network-link" aria-label="Twitter">
+                                <!-- <img src="./images/team/twitter-icon.svg" alt="Twitter icon"> -->
+                                <svg class="network-icon" width="20" height="16">
+                                    <use href="./images/symbol-defs.svg#icontwitter-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks">
-                                <a href="https://www.facebook.com/">
-                                    <img src="./images/team/facebook-icon.svg" alt="Facebook icon"></a>
-                            </li>
-                        
-                            <li class="networks">
-                                <a href="https://www.linkedin.com/">
-                                    <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"></a>
-                            </li>
-                        </ul>
+                        <li class="networks">
+                            <a href="https://www.facebook.com/" class="network-link">
+                                <!-- <img src="./images/team/facebook-icon.svg" alt="Facebook icon"> -->
+                                <svg class="network-icon" width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#iconfacebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                        <li class="networks">
+                            <a href="https://www.linkedin.com/" class="network-link">
+                                <!-- <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"> -->
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconlinkedin-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class="team-list">
-                    <img src="./images/team/Robert.png" alt="Robert's photo" class="team-pic" width="260">
+                    <img src="./images/Robert.png" alt="Robert's photo" class="team-pic" width="270">
                     <h3 class="team-list-title">Robert Jakis</h3>
                     <p class="main-text">Marketing</p>
-                        <ul class="team-networks">
-                            <li class="networks">
-                                <a href="https://www.instagram.com/">
-                                    <img src="./images/team/instagram.svg" alt="Instagram icon"></a>
-                            </li>
+                    <ul class="team-networks">
+                        <li class="networks">
+                            <a href="https://www.instagram.com/" class="network-link" aria-label="Instagtam">
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconinstagram"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks">
-                                <a href="https://twitter.com/">
-                                    <img src="./images/team/twitter-icon.svg" alt="Twitter icon"></a>
-                            </li>
+                        <li class="networks">
+                            <a href="https://twitter.com/" class="network-link" aria-label="Twitter">
+                                <!-- <img src="./images/team/twitter-icon.svg" alt="Twitter icon"> -->
+                                <svg class="network-icon" width="20" height="16">
+                                    <use href="./images/symbol-defs.svg#icontwitter-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks">
-                                <a href="https://www.facebook.com/">
-                                    <img src="./images/team/facebook-icon.svg" alt="Facebook icon"></a>
-                            </li>
+                        <li class="networks">
+                            <a href="https://www.facebook.com/" class="network-link">
+                                <!-- <img src="./images/team/facebook-icon.svg" alt="Facebook icon"> -->
+                                <svg class="network-icon" width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#iconfacebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks">
-                                <a href="https://www.linkedin.com/">
-                                    <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"></a>
-                            </li>
-                        </ul>
+                        <li class="networks">
+                            <a href="https://www.linkedin.com/" class="network-link">
+                                <!-- <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"> -->
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconlinkedin-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                
 
                 <li class="team-list">
-                    <img src="./images/team/Martin.png" alt="Martin's photo" class="team-pic" width="260">
+                    <img src="./images/martin.png" alt="Martin's photo" class="team-pic" width="270">
                     <h3 class="team-list-title">Martin Doe</h3>
                     <p class="main-text">UI Designer</p>
-                        <ul class="team-networks">
-                            <li class="networks"><a href="https://www.instagram.com/">
-                                <img src="./images/team/instagram.svg" alt="Instagram icon"></a>
-                            </li>
+                    <ul class="team-networks">
+                        <li class="networks">
+                            <a href="https://www.instagram.com/" class="network-link" aria-label="Instagtam">
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconinstagram"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks"><a href="https://twitter.com/">
-                                <img src="./images/team/twitter-icon.svg" alt="Twitter icon"></a>
-                            </li>
+                        <li class="networks">
+                            <a href="https://twitter.com/" class="network-link" aria-label="Twitter">
+                                <!-- <img src="./images/team/twitter-icon.svg" alt="Twitter icon"> -->
+                                <svg class="network-icon" width="20" height="16">
+                                    <use href="./images/symbol-defs.svg#icontwitter-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks"><a href="https://www.facebook.com/">
-                                <img src="./images/team/facebook-icon.svg" alt="Facebook icon"></a>
-                            </li>
+                        <li class="networks">
+                            <a href="https://www.facebook.com/" class="network-link">
+                                <!-- <img src="./images/team/facebook-icon.svg" alt="Facebook icon"> -->
+                                <svg class="network-icon" width="10" height="20">
+                                    <use href="./images/symbol-defs.svg#iconfacebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-                            <li class="networks"><a href="https://www.linkedin.com/">
-                                <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"></a>
-                            </li>
-                        </ul>
+                        <li class="networks">
+                            <a href="https://www.linkedin.com/" class="network-link">
+                                <!-- <img src="./images/team/linkedin-icon.svg" alt="Linkedin icon"> -->
+                                <svg class="network-icon" width="20" height="20">
+                                    <use href="./images/symbol-defs.svg#iconlinkedin-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 
             </ul>
@@ -238,22 +310,52 @@
                 <h2 class="title">Постоянные клиенты</h2>
                 <ul class="customers">
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/Ya&Co-icon.svg" alt="Ya&Co company"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/Ya&Co-icon.svg" alt="Ya&Co company"> -->
+                            <svg class="svg-icon" width="40" height="52">
+                                <use href="./images/symbol-defs.svg#iconYaCo-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/nadline-icon.svg" alt="Tagline company"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/nadline-icon.svg" alt="Tagline company"> -->
+                            <svg class="svg-icon" width="40" height="52">
+                                <use href="./images/symbol-defs.svg#iconnadline-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/company-icon.svg" alt="Company icon"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/company-icon.svg" alt="Company icon"> -->
+                            <svg class="svg-icon" width="41" height="43">
+                                <use href="./images/symbol-defs.svg#iconcompany-icon" ></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/foster-icon.svg" alt="FOSTER PETERS company"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/foster-icon.svg" alt="FOSTER PETERS company"> -->
+                            <svg class="svg-icon" width="80" height="42">
+                                <use href="./images/symbol-defs.svg#iconfoster-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/brand-icon.svg" alt="Brand company"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/brand-icon.svg" alt="Brand company"> -->
+                            <svg class="svg-icon" width="59" height="47">
+                                <use href="./images/symbol-defs.svg#iconbrand-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="customer-icon">
-                        <a href=""><img src="./images/customers/cube-icon.svg" alt="Cube company"></a>
+                        <a href="">
+                            <!-- <img src="./images/customers/cube-icon.svg" alt="Cube company"> -->
+                            <svg class="svg-icon" width="89" height="45">
+                                <use href="./images/symbol-defs.svg#iconcube-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
            </div>
@@ -276,18 +378,37 @@
                 <p class="footer-title">присоединяйтесь</p>
                 <ul class="footer-networks">
                     <li class="footer-network">
-                        <a href="https://www.instagram.com/">
-                            <img src="./images/footer/footer-insta-icon.svg" alt="Instagram icon"></a>
+                        <a href="https://www.instagram.com/" class="footer-link">
+                            <!-- <img src="./images/footer/footer-insta-icon.svg" alt="Instagram icon"></a> -->
+                            <svg class="footer-network-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#iconfooter-insta-icon"></use>
+                            </svg>
+                        </a>
                     </li>
                     <li class="footer-network">
                         <a href="https://twitter.com/">
-                            <img src="./images/footer/footer-twitter-icon.svg" alt="Twitter icon"></a></li>
+                            <!-- <img src="./images/footer/footer-twitter-icon.svg" alt="Twitter icon"></a></li> -->
+                            <svg class="footer-network-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#iconfooter-twitter-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
                     <li class="footer-network">
                         <a href="https://www.facebook.com/">
-                            <img src="./images/footer/footer-fb-icon.svg" alt="Facebook icon"></a></li>
+                            <!-- <img src="./images/footer/footer-fb-icon.svg" alt="Facebook icon"></a></li> -->
+                            <svg class="footer-network-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#iconfooter-fb-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
                     <li class="footer-network">
                         <a href="https://www.linkedin.com/">
-                            <img src="./images/footer/footer-linkedin-icon.svg" alt="Linkedin icon"></a></li>
+                            <!-- <img src="./images/footer/footer-linkedin-icon.svg" alt="Linkedin icon"></a></li> -->
+                            <svg class="footer-network-icon" width="20" height="20">
+                                <use href="./images/symbol-defs.svg#iconfooter-linkedin-icon"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
