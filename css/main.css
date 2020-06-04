@@ -171,8 +171,10 @@ header {
     
 }
 
-.contacts-link .envelope:hover {
+.contacts-link:hover .envelope,
+.contacts-link:focus .envelope {
     fill: var(--accent-text-color);
+    cursor: pointer;
 }
 
 .vector {
@@ -185,9 +187,10 @@ header {
     
 }
 
-.contacts-link .vector:hover,
-.contacts-link .vector:focus {
+.contacts-link:hover .vector,
+.contacts-link:focus .vector {
     fill: var(--accent-text-color);
+    cursor: pointer;
 }
                                     /* Web Studio main page */
 
@@ -197,12 +200,18 @@ header {
     /* outline: 2px solid red; */
     background: rgba(47, 48, 58, 0.8);
     text-align: center;
+    max-width: 1600px;
     height: 600px;
+
+    /* margin-left: auto;
+    margin-right: auto; */
 
     padding-top: 200px;
     padding-bottom: 200px;
 
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .hero-title {
@@ -217,6 +226,8 @@ header {
     text-transform: uppercase;
 
     color: var(--caption-text-color);
+
+    white-space: pre-line;
 }
 
 .primary-btn {
@@ -237,14 +248,43 @@ header {
 
 /* Features */
 
+.logic-title {
+        /* Удаляем элемент из потока документа */
+        position: absolute;
+        /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+        width: 1px;
+        height: 1px;
+        /* Скрываем вылезающий за границы контент */
+        overflow: hidden;
+        /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+        border: 0;
+        padding: 0;
+        /* Вырезаем ту часть контента, которая должна отображаться. */
+        /* Устаревшее свойство clip для старых браузеров */
+        clip: rect(0 0 0 0);
+      }
 
-.features {
+    /* visibility: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 0;
+    height: 0; */
+
+/* .features {
     margin-bottom: 0;
     margin-top: 0;
     list-style: none;
     padding-left: 0;
 
     display: flex;
+} */
+
+.list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 .container.features {
@@ -263,11 +303,13 @@ header {
 
 .background {
     background-color: var(--button-bg-color);
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;
-    padding: 25px 102px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features-item .features-text {
@@ -331,6 +373,8 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 /* 
 
@@ -404,9 +448,6 @@ header {
 }
 
 .network-icon {
-    /* width: 20px;
-    height: 20px; */
-
     fill: var(--main-network-color);
 }
 
@@ -424,7 +465,7 @@ header {
 }
 
 
-.network-icon:hover {
+.network-link:hover .network-icon {
     fill: var(--caption-text-color);
 }
 
@@ -443,15 +484,6 @@ header {
 
 .customer-icon {
     width: calc((100% - 150px) / 5);
-    
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    width: 170px;
-    height: 90px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .customer-icon:not(:last-child) {
@@ -462,13 +494,28 @@ header {
     fill: var(--main-network-color);
 }
 
-.customer-icon:hover {
-    border-color: var(--accent-text-color);
+.customer-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 
-.svg-icon:hover {
+.customer-link:hover .svg-icon {
     fill: var(--accent-text-color);
 }
+
+.customer-link:hover {
+    border-color: var(--accent-text-color);
+}
+/* .svg-icon:hover {
+    fill: var(--accent-text-color);
+} */
 
 /* Footer */
 
@@ -582,11 +629,13 @@ color: var(--caption-text-color);
     width: 44px;
     height: 44px;
 
+    background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .footer-network:hover {
